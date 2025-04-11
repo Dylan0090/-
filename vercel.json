@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/fetch-airtable-data.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/fetch-airtable-data",
+      "dest": "/api/fetch-airtable-data.js"
+    }
+  ]
+}
